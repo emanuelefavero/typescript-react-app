@@ -1,13 +1,10 @@
-import { FC } from 'react'
 export interface Props {
   name: string
   // optional prop 'color'
   color?: string
 }
 
-// FC is a type that represents a function component
-// Inside which we are passing in the Props interface
-const Hello: FC<Props> = (props) => {
+function Hello(props: Props) {
   // const [number, setNumber] = useState(0)
   // const [string, setString] = useState('')
   // const [arrayOfNumbers, setArrayOfNumbers] = useState<number[]>([])
@@ -21,6 +18,10 @@ const Hello: FC<Props> = (props) => {
   // }
   // const [object, setObject] = useState<IObject>({ name: '' })
   // ALSO: <IObject | null>(null)
+
+  // TIP: to define an empty object, use useState<Partial<IObject>>({}) or add ? to all object properties
+  // Partial makes all object properties optional
+  // Required makes all object properties required, <Required<IObject>>({})
 
   return (
     <>
