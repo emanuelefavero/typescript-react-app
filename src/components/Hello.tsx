@@ -7,6 +7,7 @@ export interface Props {
 function Hello(props: Props) {
   // const [number, setNumber] = useState(0)
   // const [string, setString] = useState('')
+  // const [boolean, setBoolean] = useState(false)
   // const [arrayOfNumbers, setArrayOfNumbers] = useState<number[]>([])
   // const [arrayOfStrings, setArrayOfStrings] = useState<string[]>([])
   // const [arrayOfStringsAndNumbers, setArrayOfStringsAndNumbers] = useState<
